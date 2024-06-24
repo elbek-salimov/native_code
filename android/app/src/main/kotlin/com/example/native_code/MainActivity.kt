@@ -82,6 +82,9 @@ class MainActivity : FlutterActivity() {
         deviceInfo["manufacturer"] =  android.os.Build.MANUFACTURER
         deviceInfo["sdkVersion"] =  android.os.Build.VERSION.SDK_INT.toString()
         deviceInfo["id"] =  android.os.Build.ID
+        deviceInfo["brand"] = android.os.Build.BRAND
+        deviceInfo["hardware"] = android.os.Build.HARDWARE
+        deviceInfo["release"] = android.os.Build.VERSION.RELEASE
 
         return deviceInfo
     }
